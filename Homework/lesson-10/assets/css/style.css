@@ -1,0 +1,368 @@
+@import url(../fonts/montserrat.css);
+@import url(../fonts/poppins.css);
+
+* {
+  padding: 0;
+  margin: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.conteiner {
+  width: 1635px;
+  margin: auto;
+}
+
+.header-menu {
+  font-family: "Montserrat Medium";
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu-left {
+  margin-top: 75px;
+  display: inline-flex;
+  width: 30%;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-menu-right {
+  display: inline-flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 75px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.man-btn {
+  margin-left: 105px;
+}
+.wooman-btn {
+  margin-left: 70px;
+}
+.kids-btn {
+  margin-left: 71px;
+}
+.cart {
+  margin-right: 5px;
+}
+.search {
+  margin-right: 22px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.arrows {
+  width: 6px;
+  color: rgb(192, 29, 29);
+  margin-left: 17px;
+  margin-right: 21px;
+}
+.nav {
+  font-family: "Poppins Light";
+  font-size: 14px;
+  margin-left: 0;
+}
+main {
+  display: flex;
+}
+.left-side {
+  width: 50%;
+}
+.main-image {
+  width: 712px;
+  margin-top: 20px;
+}
+.right-side {
+  margin-top: 20px;
+  max-height: 900px;
+  width: 50%;
+}
+.title-artl {
+  font-family: "Poppins Bold";
+  line-height: 0.7;
+  font-size: 54px;
+  width: 350px;
+  color: black;
+  margin: 0;
+}
+.title-sec-artl {
+  font-family: "Poppins Bold";
+  margin-top: 30px;
+  line-height: 0.7;
+  font-size: 54px;
+  width: 300px;
+  color: black;
+}
+p {
+  font-family: "Poppins Extra Light";
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.price {
+  font-family: "Poppins Medium";
+  font-size: 56px;
+  color: black;
+  margin-top: 74px;
+  line-height: 0.7;
+}
+.size {
+  font-family: "Poppins Extra Light";
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  margin-top: 67px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-family: "Poppins Extra Light";
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_radio_btn {
+  display: inline-flex;
+  margin-bottom: 72px;
+  margin-right: 7px;
+  min-width: 40px;
+  min-height: 40px;
+}
+.form_radio_btn input[type="radio"] {
+  display: none;
+}
+
+/* Checked */
+:checked + label {
+  border: 1px solid;
+  border-color: rgb(0, 0, 0);
+  min-width: 40px;
+  min-height: 40px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(185, 168, 168);
+  transition: 0.5s;
+  font-weight: 100 !important;
+  cursor: default !important;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+.description {
+  font-family: "Poppins Extra Light";
+  margin: 0;
+  margin-bottom: 11px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+.quantity {
+  font-family: "Poppins Extra Light";
+  margin-top: 67px;
+  margin-bottom: 15px;
+}
+input[type="text"] {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid;
+  background-color: rgb(231, 19, 19, 0);
+  color: rgb(0, 0, 0);
+  outline: 0;
+}
+.add-cart {
+  width: 750px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  font-family: "Poppins Extra Light";
+  font-size: 14px;
+}
+.input-btn {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins Extra Light";
+}
+.flex-wishlist {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-wishlist {
+  width: 750px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
+  margin-top: 28px;
+  background-image: url(../images/heart-ico.png);
+  background-repeat: no-repeat;
+  background-position: 305px center;
+  font-family: "Poppins Extra Light";
+  font-size: 14px;
+  padding-left: 28px;
+}
+.flex-thumb {
+  margin-top: 33px;
+  width: 712px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrows-thumb {
+  background-size: 100%;
+}
+.section-title {
+  font-family: "Poppins Bold";
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin: 104px 23px 38px 22px;
+}
+.section-title-second {
+  font-family: "Poppins Bold";
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin: 134px 23px 38px 22px;
+}
+.flex-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+.product-description {
+  font-family: "Poppins Medium";
+  text-align: center;
+  margin: 0px 0 12px;
+  color: black;
+}
+.product-description-grey {
+  text-align: center;
+  margin: 0 0 10px;
+  font-family: "Poppins Extra Light";
+  line-height: 0.7;
+}
+.subscribe {
+  margin: auto;
+  text-align: center;
+}
+.subscribe-description {
+  font-family: "Poppins Extra Light";
+  text-align: center;
+  width: 30%;
+  margin: 39px auto;
+  color: rgb(0, 0, 0);
+  line-height: 2.2;
+}
+.email {
+  margin: 62px 0 auto;
+  text-align: center;
+}
+input[type="email"] {
+  width: 296px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 14px;
+  font-family: "Poppins Extra Light";
+}
+.submit-email {
+  font-family: "Poppins Medium";
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  background-color: white;
+  text-align: right;
+}
+.footer-menu-left {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-menu-right {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-menu-centre {
+  font-family: "Montserrat Medium";
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 256px;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-right {
+  margin: 0;
+  font-family: "Poppins Extra Light";
+  font-size: 12px;
+  color: rgb(201, 201, 201);
+}
+footer {
+  margin-top: 157px;
+}
+.subscribe-description-grey {
+  font-size: 12px;
+  text-align: center;
+  width: 49%;
+  margin: 37px auto;
+  line-height: 2;
+  font-family: "Poppins Extra Light";
+  color: rgb(201, 201, 201);
+}
+.footer-line {
+  margin: 30px 0;
+}
+.footer-btn {
+  font-family: "Montserrat Medium";
+  color: rgb(201, 201, 201);
+}
+:active::after.favorite-heart {
+  background-image: url(../images/heart_red-ico.png);
+}
+.favorite-heart {
+  transition: 0.35s;
+}
+.favorite-heart:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* .favorite-heart:active {
+  background-image: url(../images/heart_red-ico.png) !important;
+} */

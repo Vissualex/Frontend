@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <h1 align="center">Домашнє завдання</h1>
+  <h2 align="center">Довільні таблиці</h2>
+
+  <table width="1100" bordercolor="2c4146" border="1" height="200" align="center" cellspacing="0">
+    <caption><b>Варіант 1</b></caption>
+    <tbody>
+      <tr>
+        <th width="10%" bgcolor="b8b6d5">#</th>
+        <th width="30%" bgcolor="b8b6d5">Прізвище</th>
+        <th width="30%" bgcolor="b8b6d5">Ім'я</th>
+        <th width="30%" bgcolor="b8b6d5">Логін</th>
+      </tr>
+      <tr>
+        <th bgcolor="b6d5cb">1</th>
+        <td bgcolor="b6d5cb">Іванов</td>
+        <td bgcolor="b6d5cb">Іван</td>
+        <td bgcolor="b6d5cb">@IvanIvanov</td>
+      </tr>
+      <tr>
+        <th bgcolor="f0cffc">2</th>
+        <td bgcolor="f0cffc">Петров</td>
+        <td bgcolor="f0cffc">Петро</td>
+        <td bgcolor="f0cffc">@PetroPetrov</td>
+      </tr>
+      <tr>
+        <th bgcolor="fffdc0">3</th>
+        <td bgcolor="fffdc0">Васильєв</td>
+        <td bgcolor="fffdc0">Василь</td>
+        <td bgcolor="fffdc0">@VasylVasyliev</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table cellspacing="0" bordercolor="dcf000" border="1" width="1100" height="400" align="center">
+    <tbody>
+      <caption><b>Варіант 2</b></caption>
+      <tr>
+        <td bgcolor="74a421" width="300" rowspan="4" align="center">1</td>
+        <td bgcolor="8d9a9d" height="20%" align="center">2</td>
+        <td bgcolor="8d9a9d" align="center">3</td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="d64439" colspan="2" rowspan="2">5</td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="423a4c" height="20%">13</td>
+        <td align="center" bgcolor="423a4c">14</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" border="1" width="1100" height="300">
+    <tbody>
+      <caption><b>Варіант 3</b></caption>
+      <tr>
+        <td height="20%" bgcolor="fccd74">1</td>
+        <td bgcolor="fccd74">2</td>
+        <td bgcolor="fccd74">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="fccd74">4</td>
+        <td colspan="2" rowspan="2" width="75%" height="100" bgcolor="423a4c">
+          <table cellspacing="0" bordercolor="264d5a" border="1" width="750" height="200" align="center">
+            <tbody>
+              <tr>
+                <td bgcolor="b6e9fa" width="100" rowspan="4" align="center">1</td>
+                <td bgcolor="b6e9fa" height="20%" align="center">2</td>
+                <td bgcolor="b6e9fa" align="center">3</td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="b6e9fa" colspan="2" rowspan="2">5</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="b6e9fa" height="20%">13</td>
+                <td align="center" bgcolor="b6e9fa">14</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="fccd74">7</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr color="9439f2">
+
+  <h2 align="center">Таблиця з фото</h2>
+
+  <table width="750" align="center">
+    <tbody>
+      <tr>
+        <td>
+          <a href="img/apple-square-cube-3g.png" target="_blank">
+            <img src="img/apple-square-cube-3g.png" width="250" height="250" alt="apple">
+          </a>
+        </td>
+
+        <td>
+          <a href="img/apple-square-cube-3b.png" target="_blank">
+            <img src="img/apple-square-cube-3b.png" width="250" height="250" alt="apple">
+          </a>
+        </td>
+
+        <td>
+          <a href="img/apple-square-cube-3d.png" target="_blank">
+            <img src="img/apple-square-cube-3d.png" width="250" height="250" alt="aplle">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr color="9439f2">
+
+  <h2 align="center">Форми</h2>
+
+  <form name="feedback-form" method="get">
+    <fieldset title="Заповніть свої дані. Усі поля обов'язкові">
+      <legend>Особисті дані</legend>
+
+      <div>
+        <label for="firsname">Ваше ім'я</label>
+        <input required type="text" id="firsname" name="firstname" placeholder="Ваше ім'я">
+      </div>
+
+      <div>
+        <label for="lastname">Ваше прізвище</label>
+        <input required type="text" id="lastname" name="lastname" placeholder="Ваше прізвище">
+      </div>
+
+      <div>
+        <label for="age">Ваш вік</label>
+        <input type="number" name="age" id="age" value="25" placeholder="Вік">
+      </div>
+
+      <div>
+        <label for="phone">Ваш телефон</label>
+        <input required type="tel" id="phone" name="phone" placeholder="093-123-4567">
+      </div>
+
+      <div>
+        <label for="email">Ваш email</label>
+        <input required type="email" id="email">
+      </div>
+    </fieldset>
+
+    <p>
+    <fieldset title="Заповніть свої дані. Усі поля обов'язкові">
+      <legend>Безбека</legend>
+
+      <div>
+        <label for="pass">Введіть пароль</label>
+        <input required type="password" name="password" id="pass">
+      </div>
+
+      <div>
+        <label for="passconfirm">Підтвердити пароль</label>
+        <input required type="password" name="passconfirm" id="passconfirm">
+      </div>
+    </fieldset>
+    </p>
+
+    <p>
+
+    <div>
+      <input type="submit" value="Відправити">
+      <input type="reset" value="Відмінити">
+    </div>
+
+    </p>
+  </form>
+
+  <p></p>
+  <P></P>
+  <P></P>
+
+  <table width="1100" cellspacing="0" bordercolor="2c4146" border="0" align="center">
+    <tbody>
+      <tr>
+        <td rowspan="5" bgcolor="red" width="20%">1</td>
+        <td colspan="2" height="100" width="15%">2</td>
+        <td colspan="2" bgcolor="green" width="20%">3</td>
+        <td colspan="3" width="20%">4</td>
+        <td rowspan="5" bgcolor="red" width="20%">9</td>
+      </tr>
+      <tr>
+        <td colspan="7" height="100" bgcolor="blue">10</td>
+      </tr>
+      <tr>
+        <td height="70">19</td>
+        <td bgcolor="magenta">20</td>
+        <td width="7%">21</td>
+        <td bgcolor="magenta" width="7%">22</td>
+        <td width="7%">23</td>
+        <td bgcolor="magenta">24</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td colspan="7" height="100" bgcolor="green">28</td>
+      </tr>
+      <tr>
+        <td colspan="7" height="100" bgcolor="magenta">37</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colortext {
+            color: red;
+        }
+
+        .textarea {
+            max-width: 150px;
+            margin: 45px 0 0 0;
+        }
+
+        .checkbox {
+            margin: 5px;
+        }
+
+        .submit {
+            width: auto;
+        }
+
+        .conteiner {
+            max-width: 830px;
+            margin: auto;
+        }
+
+        input[type="checkbox"] {
+            width: 15px;
+            left: 0;
+            margin: 0 0 0 90px;
+        }
+
+        input[type="submit"] {
+            margin: auto;
+            box-shadow: 0px 0px 15px;
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+            padding-left: 20px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 200;
+            font-style: oblique;
+        }
+
+
+        label {
+            position: absolute;
+            margin: 25px 0 0 0;
+        }
+
+        fieldset {
+            width: 800px;
+            margin: 20px auto;
+            background-color: rgb(112, 210, 255);
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px;
+            border: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+
+        input {
+            width: 400px;
+            height: 25px;
+            margin: 15px 0 0 150px;
+            background-color: rgb(162, 162, 165);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            border-style: solid;
+            border-color: rgb(5, 5, 5);
+            border-width: 1px;
+        }
+
+        textarea {
+            width: 380px;
+            margin: 0 0 0 150px;
+            background-color: rgb(162, 162, 165);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            border-style: solid;
+            border-color: rgb(5, 5, 5);
+            border-width: 1px;
+            padding-left: 20px;
+        }
+
+        legend {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+
+        select {
+            width: 405px;
+            height: 30px;
+            margin: 15px 0px 15px 150px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(162, 162, 165);
+            border-radius: 10px;
+            border-style: solid;
+            border-color: rgb(5, 5, 5);
+            border-width: 1px;
+            padding-left: 20px;
+        }
+
+        option {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conteiner">
+        <div>
+            <h1>Форма заявки на работу в зоопарке</h1>
+        </div>
+
+        <div>
+            <h4><i>Пожалуйста, заполните форму. Обязательные поля отмечены <span class="colortext">*</span></i></h4>
+        </div>
+
+        <form name="feedback-form" method="get">
+            <div>
+                <fieldset title="Заполните форму. Поля отмеченные * обязательные ">
+                    <legend>Контактная информация</legend>
+
+                    <div>
+                        <label for="firstname"> Имя <span class="colortext">*</span></label>
+                        <input required name="firstname" type="text" id="firstname" placeholder="Ваше имя">
+                    </div>
+
+                    <div>
+                        <label for="phone"> Телефон </label>
+                        <input name="phone" type="tel" id="phone" placeholder="093-1234567">
+                    </div>
+
+                    <div>
+                        <label for="email"> Email <span class="colortext">*</span> </label>
+                        <input required name="email" type="email" id="email">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset title="Заполните форму. Поля отмеченные * обязательные ">
+                    <legend>Персональная информация</legend>
+
+                    <div>
+                        <label for="age"> Возраст <span class="colortext">*</span></label>
+                        <input required name="age" type="number" id="age" placeholder="Ваш возраст">
+                    </div>
+
+                    <div class="gender">
+                        <label for="gender">Пол</label>
+                        <select name="gender" id="gender">
+                            <option>Женщина</option>
+                            <option>Мужчина</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="textarea" for="textarea">Перечислите личные качества </label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="5">Расскажите о себе</textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset title="Заполните форму. Поля отмеченные * обязательные ">
+                    <legend>Выберите ваших любимых животных</legend>
+
+                    <div>
+                        <input name="Zebra" type="checkbox" id="checkbox_zebra">
+                        <label class="checkbox" for="checkbox_zebra">Зебра</label>
+
+                        <input name="checkbox_koshak" type="checkbox" id="checkbox_koshak">
+                        <label class="checkbox" for="checkbox_koshak">Кошак</label>
+
+                        <input name="anakonda" type="checkbox" id="checkbox_anakonda">
+                        <label class="checkbox" for="checkbox_anakonda">Анаконда</label>
+
+                        <input name="men" type="checkbox" id="checkbox_men">
+                        <label class="checkbox" for="checkbox_men">Человек</label>
+                    </div>
+
+                    <div>
+                        <input name="slon" type="checkbox" id="checkbox_slon">
+                        <label class="checkbox" for="checkbox_slon">Слон</label>
+
+                        <input name="antilopa" type="checkbox" id="checkbox_antilopa">
+                        <label class="checkbox" for="checkbox_antilopa">Антилопа</label>
+
+                        <input name="golub" type="checkbox" id="checkbox_golub">
+                        <label class="checkbox" for="checkbox_golub">Голубь</label>
+
+                        <input name="krab" type="checkbox" id="checkbox_krab">
+                        <label class="checkbox" for="checkbox_krab">Краб</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Отправить информацию">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

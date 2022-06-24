@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("subset-SegoeUIBlack.woff2") format("woff2"),
+    url("subset-SegoeUIBlack.woff") format("woff"),
+    url("subset-SegoeUIBlack.svg#SegoeUIBlack") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
